@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Internet permission for Gemini API calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <!-- Package visibility queries: this lets the app see other apps that have a launcher activity.
          This avoids using QUERY_ALL_PACKAGES (restricted on Play Store) while still allowing
          listing of launchable apps. If you truly need to see every package (including
